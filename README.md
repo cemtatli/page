@@ -1,28 +1,38 @@
-<img src="thumbnail.png" />
+# sv
 
-## Overview
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-The projects I've worked on, information about me, my blog posts, and the bookmarks I've shared make up my personal website.
+## Creating a project
 
-- `/` - Home page.
-- `pages/about` - About page.
-- `pages/contact` - Contact page.
-- `pages/bookmarks` - Bookmarks page.
-- `pages/blog` - Blog page. \* coming soon
-
-## Built With
-
-- [Next.js](https://nextjs.org)
-- [TypeScript](https://www.contentful.com)
-- [shadcn/ui](https://ui.shadcn.com/)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Vercel](https://vercel.com)
-
-## Running Locally
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-$ git clone https://github.com/cemtatli/cemtatli.dev.git
-$ cd cemtatli.dev
-$ npm install
-$ npm run dev
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
 ```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
